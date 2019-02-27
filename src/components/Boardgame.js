@@ -13,7 +13,7 @@ export default function Boardgame() {
   const [secretDigits, computeNextSecretDigits] = useSecretDigits();
   const [attempts, addAttempt, resetAttempts] = useAttempts();
 
-  // TODO only testing the last attempts should be sufficient
+  // TODO only testing the last attempt should be sufficient
   const found = attempts.indexOf(secretDigits) !== -1;
 
   function handleRestart() {
