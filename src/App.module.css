@@ -1,0 +1,34 @@
+.app {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: monospace;
+}
+
+.app header {
+  margin-bottom: 2.5rem;
+}
+
+.app header h1 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.app h1 small {
+  display: block;
+  color: silver;
+}
+
+.app footer {
+  border-top: 2px dashed lightgray;
+  margin-top: 2rem;
+  padding-top: 0.75rem;
+  text-align: right;
+}
+
+.github {
+  /* colorize black part of the logo using the "teal" color
+     generated via https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(35%) sepia(33%) saturate(7488%) hue-rotate(161deg)
+    brightness(85%) contrast(101%);
+}
