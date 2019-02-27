@@ -34,6 +34,7 @@ export default React.forwardRef(function DigitInput({ value, onChange }, ref) {
       required
       className={styles.digit}
       value={value}
+      onClick={() => ref.current.select()}
       onKeyDown={handleKeyDown}
       onChange={onChange}
     />
