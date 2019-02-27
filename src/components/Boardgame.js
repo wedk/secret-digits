@@ -14,7 +14,7 @@ export default function Boardgame() {
   const [attempts, addAttempt, resetAttempts] = useAttempts();
 
   // TODO only testing the last attempts should be sufficient
-  const found = attempts.some(attempt => attempt === secretDigits);
+  const found = attempts.indexOf(secretDigits) !== -1;
 
   function handleRestart() {
     computeNextSecretDigits();
