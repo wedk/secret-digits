@@ -21,13 +21,14 @@
 
 .app h1 small {
   display: block;
-  color: silver;
+  color: #737373;
+  font-weight: normal;
 }
 
 .app footer {
   align-items: flex-start;
-  border-top: 1px solid #f0f0f0;
-  color: lightgray;
+  border-top: 1px solid lightgray;
+  color: #737373;
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
