@@ -5,12 +5,17 @@
   font-family: monospace;
 }
 
+@media (min-height: 680px) {
+  .app {
+    margin-top: 3rem;
+  }
+}
+
 .app header {
   margin-bottom: 2.5rem;
 }
 
 .app header h1 {
-  margin-top: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -20,10 +25,13 @@
 }
 
 .app footer {
-  border-top: 2px dashed lightgray;
+  align-items: flex-start;
+  border-top: 1px solid #f0f0f0;
+  color: lightgray;
+  display: flex;
+  justify-content: space-between;
   margin-top: 2rem;
-  padding-top: 0.75rem;
-  text-align: right;
+  padding-top: 0.5rem;
 }
 
 .github {

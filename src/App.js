@@ -6,6 +6,8 @@ import github from './images/github.png';
 import Introduction from './components/Introduction';
 import Boardgame from './components/Boardgame';
 
+const currentYear = new Date().getFullYear();
+
 export default function App() {
   return (
     <main className={styles.app}>
@@ -18,6 +20,7 @@ export default function App() {
       </header>
       <Boardgame />
       <footer>
+        Copyright &copy; {currentYear} wed
         <a
           href="https://github.com/wedk/secret-digits"
           target="_blank"
@@ -27,8 +30,8 @@ export default function App() {
           <img
             src={github}
             className={styles.github}
-            width="24"
-            height="24"
+            width="18"
+            height="18"
             alt="GitHub logo"
           />
         </a>
