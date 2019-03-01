@@ -22,10 +22,10 @@ export default function InputForm({ onSubmit }) {
     refs.current[0].current.scrollIntoView();
   }
 
-  function handleChange(value, index) {
-    setDigitAt(value, index);
-    if (value !== '' && index < digits.length - 1) { // not last digit
-      refs.current[index + 1].current.focus();
+  function handleTransfertFocus(index, direction) {
+    const targetIndex = index + direction;
+    if (targetIndex >= 0 && targetIndex < digits.length) {
+      refs.current[targetIndex].current.focus();
     }
   }
 
@@ -37,7 +37,8 @@ export default function InputForm({ onSubmit }) {
             key={index}
             ref={refs.current[index]}
             value={value}
-            onChange={ev => handleChange(ev.target.value, index)}
+            onChange={value => setDigitAt(value, index)}
+            onYieldFocus={direction => handleTransfertFocus(index, direction)}
           />
         ))}
       </fieldset>
