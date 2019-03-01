@@ -34,6 +34,7 @@ export default function InputForm({ onSubmit }) {
       <fieldset className={styles.fieldset}>
         {digits.map((value, index) => (
           <DigitInput
+            label={`digit number #${index + 1}`}
             key={index}
             ref={refs.current[index]}
             value={value}

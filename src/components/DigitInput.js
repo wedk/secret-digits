@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './DigitInput.module.css';
 
-export default React.forwardRef(function DigitInput({ value, onChange, onYieldFocus }, ref) {
+export default React.forwardRef(function DigitInput({ label, value, onChange, onYieldFocus }, ref) {
   const [lastKeyCode, setLastKeyCode] = React.useState(null);
 
   function handleKeyDown(ev) {
@@ -35,6 +35,7 @@ export default React.forwardRef(function DigitInput({ value, onChange, onYieldFo
       max="9"
       required
       className={styles.digit}
+      aria-label={label}
       value={value}
       onClick={() => ref.current.select()}
       onKeyDown={handleKeyDown}
