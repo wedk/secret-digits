@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4df5b43787fa5ce87c61",
-    "url": "/secret-digits/static/css/main.f6141ea6.chunk.css"
+    "revision": "2360f2c7e70bb6849197",
+    "url": "/secret-digits/static/css/main.3cc416a3.chunk.css"
   },
   {
-    "revision": "4df5b43787fa5ce87c61",
-    "url": "/secret-digits/static/js/main.4df5b437.chunk.js"
+    "revision": "2360f2c7e70bb6849197",
+    "url": "/secret-digits/static/js/main.2360f2c7.chunk.js"
   },
   {
     "revision": "b916e5be593541c1677e",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/secret-digits/static/js/2.e8b73ec2.chunk.js"
   },
   {
-    "revision": "8d64a58621e7b1a8692734389f3f53ef",
+    "revision": "5e7862a2e033cc2ca287c99b6f650afe",
     "url": "/secret-digits/index.html"
   }
 ];
